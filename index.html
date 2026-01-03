@@ -1,40 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Hello World - GitHub Pages</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: system-ui, Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.5;
-    }
-    h1 { color: #2563eb; }
-    .box {
-      padding: 1rem 1.25rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      max-width: 600px;
-      background: #f9f9f9;
-    }
-    @media (prefers-color-scheme: dark) {
-      .box { background: #1e1e1e; border-color: #444; }
-      body { background: #121212; color: #ddd; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Abdullah | Frontend & WordPress Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello, World! 👋</h1>
-  <div class="box">
-    <p>This is your GitHub Pages site for <strong>mohammedabdullahcs.github.io</strong>.</p>
-    <p>Edit <code>index.html</code> in the repository and refresh to see changes.</p>
-    <p>Deployed with GitHub Pages.</p>
-  </div>
-  <footer style="margin-top:2rem;font-size:.875rem;opacity:.7;">
-    &copy; <span id="year"></span> mohammedabdullahcs
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">M. Abdullah</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#academic" class="nav-link">Academic</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-name">Muhammad Abdullah</h1>
+            <h2 class="hero-title">Frontend & WordPress Developer</h2>
+            <p class="hero-tagline">Building responsive, practical, and user focused web solutions</p>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in-left">
+                    <p>I am a software engineering student with a strong focus on frontend web development and WordPress based solutions. I enjoy building responsive layouts, solving real world problems, and continuously improving my technical skills through hands on projects and structured learning.</p>
+                    <p>My work combines academic foundations with practical implementation. I focus on clean structure, usability, and performance while keeping solutions simple and maintainable. I am actively learning modern development practices and tools to prepare for both industry and research oriented environments.</p>
+                </div>
+                <div class="about-values fade-in-right">
+                    <h3>Values & Work Ethic</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Strong focus on learning by doing</li>
+                        <li><i class="fas fa-check-circle"></i> Preference for clarity, structure, and correctness</li>
+                        <li><i class="fas fa-check-circle"></i> Willingness to research deeply</li>
+                        <li><i class="fas fa-check-circle"></i> Commitment to continuous improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Web Dev -->
+                <div class="skill-card fade-in-up">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Web Design</li>
+                        <li>CSS Grid & Flexbox</li>
+                        <li>JavaScript Fundamentals</li>
+                        <li>DOM Manipulation</li>
+                    </ul>
+                </div>
+                <!-- WordPress -->
+                <div class="skill-card fade-in-up" style="transition-delay: 0.1s;">
+                    <i class="fab fa-wordpress skill-icon"></i>
+                    <h3>WordPress</h3>
+                    <ul>
+                        <li>Theme Customization</li>
+                        <li>WP Bakery Integration</li>
+                        <li>WooCommerce Setup</li>
+                        <li>Site Migration</li>
+                        <li>Debugging & Troubleshooting</li>
+                    </ul>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card fade-in-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Backend & DB</h3>
+                    <ul>
+                        <li>PHP Fundamentals</li>
+                        <li>PHP Functions & Objects</li>
+                        <li>MySQL Basics</li>
+                        <li>Database Queries</li>
+                    </ul>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card fade-in-up" style="transition-delay: 0.3s;">
+                    <i class="fas fa-tools skill-icon"></i>
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git & Version Control</li>
+                        <li>Linux Environment</li>
+                        <li>Browser Dev Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects & Experience</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-content">
+                        <h3>Responsive Web Layouts</h3>
+                        <p>Designed responsive CSS grid based layouts for desktop, tablet, and mobile. Focused on usability and clean structure.</p>
+                        <div class="tags">
+                            <span>CSS Grid</span>
+                            <span>Responsive</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-content">
+                        <h3>WordPress Development</h3>
+                        <p>Customized themes and layouts using HTML, CSS, and WP Bakery. Migrated websites and debugged WooCommerce issues.</p>
+                        <div class="tags">
+                            <span>WordPress</span>
+                            <span>WooCommerce</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-content">
+                        <h3>Video Integration</h3>
+                        <p>Worked with YouTube Player API and Video.js. Implemented custom video controls and embedding solutions.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>Video.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-content">
+                        <h3>Academic Modeling</h3>
+                        <p>Created UML diagrams including use case and activity diagrams using PlantUML. Applied software engineering principles.</p>
+                        <div class="tags">
+                            <span>UML</span>
+                            <span>PlantUML</span>
+                            <span>Software Eng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic & Learning Section -->
+    <section id="academic" class="section bg-light">
+        <div class="container">
+            <div class="two-column-grid">
+                <div class="column fade-in-left">
+                    <h2 class="section-title-left">Academic Background</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Software Engineering</h3>
+                            <span class="date">Undergraduate Student</span>
+                            <p>Relevant Coursework:</p>
+                            <ul class="compact-list">
+                                <li>Web Development</li>
+                                <li>Programming in JavaScript</li>
+                                <li>Server Side Programming (PHP)</li>
+                                <li>Intro to MySQL</li>
+                                <li>AI Fundamentals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column fade-in-right">
+                    <h2 class="section-title-left">Learning & Problem Solving</h2>
+                    <div class="info-block">
+                        <h3>Current Focus</h3>
+                        <ul class="compact-list">
+                            <li>freeCodeCamp Responsive Web Design</li>
+                            <li>Touch Typing Productivity</li>
+                            <li>C++ Data Structures (STL, Heap)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3>Solved Problems</h3>
+                        <ul class="compact-list">
+                            <li>Debugged WordPress critical errors</li>
+                            <li>Resolved theme/plugin conflicts</li>
+                            <li>Android system limitations (ADB/Shizuku)</li>
+                            <li>Python environment troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-flex">
+                <div class="service-item fade-in-up">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend Development</h3>
+                </div>
+                <div class="service-item fade-in-up">
+                    <i class="fab fa-wordpress-simple"></i>
+                    <h3>WordPress Customization</h3>
+                </div>
+                <div class="service-item fade-in-up">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+                <div class="service-item fade-in-up">
+                    <i class="fas fa-bug"></i>
+                    <h3>Debugging & Optimization</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I am available for freelance work and professional opportunities.</p>
+            <div class="contact-links">
+                <a href="mailto:contact@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Abdullah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
